@@ -11,23 +11,13 @@
         >
           <img class="h-10" src="../../../favicon.ico" />
         </a>
-        <nav class="hidden ml-6 space-x-2 lg:block">
+        <nav class="ml-6 space-x-2 block">
           <a href="https://github.com/mgeovany" target="_blank" class="link">
             &#64;mgeovany
           </a>
-
-          @if(true){
-          <a href="/account" class="link"> Account </a>
-          }
         </nav>
       </div>
-      <div class="flex justify-end flex-1 space-x-8">
-        @if(!true){
-        <button class="link" onClick="{handleSignOut}">Sign out</button>
-        } @else{
-        <a href="/signin" class="link"> Sign in </a>
-        }
-      </div>
+      <app-button title="My Polls" routerLink="/myPolls" />
     </div>
   </div>
 </nav>
